@@ -5,6 +5,13 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import { Grid } from '@material-ui/core';
+
+import SimpleContainer from '../Home/Home';
+import MediaCard from '../Home/Card';
+import MediaCardImage from '../Home/picture'
+import State from '../State/State'
+import './NavTabs.css'
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -59,7 +66,7 @@ function LinkTab(props: LinkTabProps) {
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
     flexGrow: 1,
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: 'gray',
   },
 }));
 
@@ -86,10 +93,14 @@ export default function NavTabs() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        Home
+        <SimpleContainer/>
+        <Grid container direction="row" justify="space-evenly" alignItems="flex-start">
+          <MediaCard/>
+          <MediaCardImage/>
+          </Grid>              
       </TabPanel>
       <TabPanel value={value} index={1}>
-        State Wise Stats
+        <State/>
       </TabPanel>
       <TabPanel value={value} index={2}>
         Latest Update

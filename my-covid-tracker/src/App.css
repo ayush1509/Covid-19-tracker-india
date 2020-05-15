@@ -1,6 +1,6 @@
 header {
   text-align: center;
-  background-color: darkblue;
+  background: linear-gradient(to bottom right,   #330066,  #c299ff);
   color: lightblue;
   margin-bottom: -30px;
 
@@ -8,5 +8,20 @@ header {
 
 .App {
   margin-top: -30px;
+  font-family: 'Noto Sans JP', sans-serif;
 }
+
+h1 {
+  font-size: 1.7rem;
+}
+
+
+@media (min-width: 868px) {
+  h1 {
+      font-size: 2rem;
+  }
+}
+
+
+
 

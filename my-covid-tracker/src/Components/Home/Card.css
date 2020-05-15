@@ -1,0 +1,24 @@
+.mobile{
+    display: none;
+ }
+ 
+ @media only screen and (max-width: 828px){ 
+    .desktop{
+      display: none;
+    }
+ 
+    .mobile{
+      display: block;
+    }
+ }
+
+ @media (max-width: 828px){
+     .image{
+        margin-top: 25px;
+     }
+ }
+
+
+ .change{
+    background: linear-gradient(to bottom right,   #330066    ,  #c299ff);
+ }
